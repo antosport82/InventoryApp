@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin"
+        tools:context=".EditorActivity">
+
+        <ImageView
+            android:id="@+id/item_picture"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:contentDescription="@string/item_pic"
+            android:paddingBottom="12dp"
+            android:src="@drawable/search_icon" />
+
+        <EditText
+            android:id="@+id/edit_item_name"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_item_name"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/edit_item_description"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_item_description"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/edit_item_quantity"
+            style="@style/EditorFieldStyle"
+            android:inputType="number"
+            android:hint="@string/hint_item_quantity" />
+
+        <EditText
+            android:id="@+id/edit_item_price"
+            style="@style/EditorFieldStyle"
+            android:inputType="numberDecimal"
+            android:hint="@string/hint_item_price" />
+
+        <EditText
+            android:id="@+id/edit_item_supplier_name"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_item_supplier_name"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/edit_item_supplier_email"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_item_supplier_email"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+</ScrollView>
